@@ -7,10 +7,8 @@ import org.apache.flink.table.descriptors.{Csv, FileSystem, Schema}
 
 import org.apache.flink.api.scala._
 
-object Example {
+object BatchTable {
   def main(args: Array[String]): Unit = {
-
-
     val env = ExecutionEnvironment.getExecutionEnvironment
     val tEnv = BatchTableEnvironment.create(env)
 
